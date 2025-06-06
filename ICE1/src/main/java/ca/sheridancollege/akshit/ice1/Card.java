@@ -1,48 +1,37 @@
 package ca.sheridancollege.akshit.ice1;
 
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-
 /**
- *
- * @author akshi
+ * Modifier: Akshit  
+ * Student ID: 991764651
+ * Date: June 3, 2025
+ * 
+ * A class that models playing card Objects.
  */
 public class Card {
-      private String suit; //clubs, spades, diamonds, hearts
-   private int value;   //1-13
 
-   public static final String[] SUITS = {"Hearts", "Diamonds", "Spades", "Clubs"};
+    private String suit;
+    private int value;
 
-    /**
-     * @return the suit
-     */
+    public static final String[] SUITS = {"Hearts", "Diamonds", "Spades", "Clubs"};
+
     public String getSuit() {
         return suit;
     }
 
-    /**
-     * @param suit the suit to set
-     */
     public void setSuit(String suit) {
         this.suit = suit;
     }
 
-    /**
-     * @return the value
-     */
     public int getValue() {
         return value;
     }
 
-    /**
-     * @param value the value to set
-     */
     public void setValue(int value) {
         this.value = value;
     }
+
+    @Override
+    public String toString() {
+        return value + " of " + suit;
+    }
 }
-
-    
-
